@@ -1,0 +1,19 @@
+{
+  "name": "gatewaypharmacy",
+  "version": "0.0.0",
+  "authors": [
+    "Son Truong <sont85@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
