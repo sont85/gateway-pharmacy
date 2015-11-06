@@ -8,6 +8,9 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        sourceMap: true
+      },
       dist: {
         files: {
           'public/javascripts/main.min.js': 'javascripts/main.js'
