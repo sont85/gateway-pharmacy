@@ -1,1 +1,33 @@
-@import 'base'; 
+@import 'base';
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+.section-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+#ourMission {
+  background-color: #f3d7a6;
+  color: #3e4754;
+}
+#mapping {
+  height: 300px;
+ }
+video {
+  width: 100% ;
+  height: auto ;
+}
+.modal {
+  color: #25325c;
+}
+#carousel-section img{
+  max-height: 400px;
+  width: 100%;
+}
+
+footer {
+  background-color: #3e6294;
+  color: white;
+}
