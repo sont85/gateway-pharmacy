@@ -1,4 +1,4 @@
-// @import 'reset';
+@import 'reset';
 html, body {
    height: 100%;
    margin: 0;
@@ -6,17 +6,46 @@ html, body {
 }
 .navbar {
   margin-bottom: 0;
+  ul {
+    a {
+      font-weight: 700;
+      font-family: 'Roboto';
+    }
+  }
 }
 .section-wrapper {
   padding-top: 30px;
   padding-bottom: 30px
 }
+.img-wrapper {
+  img{
+  width: 100%;
+  height: 250px;
+  }
+}
+.selected {
+  a {
+    color: $gold !important;
+  }
+}
+
+.fa-5x:hover {
+  color: $gold;
+}
 #ourMission {
-  background-color: #f3d7a6;
+  background-color: $lightgray;
   color: #3e4754;
+  .title {
+    color: $blue;
+    font-size: 32px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+  }
 }
 #mapping {
   height: 300px;
+  margin-top: 10px;
+  border: 4px solid $lightgray;
  }
 video {
   width: 100% ;
@@ -31,9 +60,9 @@ video {
 }
 
 footer {
-  background-color: #3e6294;
+  background-color: $blue;
   color: white;
   a {
-    color: #f3d7a6;
+    color: $gold;
   }
 }

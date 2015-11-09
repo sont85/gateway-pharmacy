@@ -1,9 +1,9 @@
 var app = angular.module('app',['ui.router']);
 
-app.controller('ContactCtrl', function(){
+app.controller('ContactCtrl', function($location){
   function initMap() {
 
-    var myLatLng = {lat: 38.263302, lng: -122.052021}
+    var myLatLng = {lat: 38.2642, lng: -122.052021}
     var map = new google.maps.Map(document.getElementById('mapping'), {
       center: myLatLng,
       zoom: 13,
@@ -11,14 +11,19 @@ app.controller('ContactCtrl', function(){
     });
     var marker = new google.maps.Marker({
       position: myLatLng,
-      map: map,
-      title: 'Gateway Pharmacy'
+      title: 'Gateway Pharmacy',
+      map: map
     });
   }
   initMap();
 });
 app.controller('MainCtrl', function(){
-  console.log('mainctrl')
+});
+
+app.controller('NavCtrl', function($scope, $location){
+  $scope.activePath = function(){
+    return $location.path();
+  }
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -32,6 +37,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('about', {
       url: '/about',
       templateUrl:'public/html/about.html',
+      controller: 'MainCtrl'
+    })
+    .state('services', {
+      url: '/services',
+      templateUrl:'public/html/services.html',
+      controller: 'MainCtrl'
+    })
+    .state('compounding', {
+      url: '/compounding',
+      templateUrl:'public/html/compounding.html',
       controller: 'MainCtrl'
     })
     .state('contact', {
