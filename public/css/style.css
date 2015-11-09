@@ -3,6 +3,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.navbar {
+  margin-bottom: 0; }
+
 .section-wrapper {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -28,5 +31,7 @@ video {
 footer {
   background-color: #3e6294;
   color: white; }
+  footer a {
+    color: #f3d7a6; }
 
 /*# sourceMappingURL=style.css.map */

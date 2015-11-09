@@ -1,8 +1,11 @@
-@import 'base';
+// @import 'reset';
 html, body {
    height: 100%;
    margin: 0;
    padding: 0;
+}
+.navbar {
+  margin-bottom: 0;
 }
 .section-wrapper {
   padding-top: 30px;
@@ -30,4 +33,7 @@ video {
 footer {
   background-color: #3e6294;
   color: white;
+  a {
+    color: #f3d7a6;
+  }
 }
