@@ -9,7 +9,7 @@ html, body {
   ul {
     a {
       font-weight: 700;
-      font-family: 'Roboto';
+      font-family: $font-roboto;
     }
   }
 }
@@ -28,19 +28,22 @@ html, body {
     color: $gold !important;
   }
 }
-
+.title {
+  color: $blue;
+  font-size: 32px;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+}
+.subtitle {
+  color: $blue;
+  font-family: 'Roboto';
+}
 .fa-5x:hover {
   color: $gold;
 }
 #ourMission {
   background-color: $lightgray;
   color: #3e4754;
-  .title {
-    color: $blue;
-    font-size: 32px;
-    font-family: 'Roboto';
-    margin-bottom: 20px;
-  }
 }
 #mapping {
   height: 300px;
@@ -58,11 +61,21 @@ video {
   max-height: 400px;
   width: 100%;
 }
+#about {
+  background-color: $lightgray;
+  .title {
+    font-family: $font-roboto;
+  }
+}
 
 footer {
+  padding-top: 10px;
   background-color: $blue;
   color: white;
   a {
     color: $gold;
+  }
+  a:hover {
+    color: white;
   }
 }
