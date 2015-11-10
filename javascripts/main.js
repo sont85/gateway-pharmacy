@@ -26,7 +26,11 @@ app.controller('NavCtrl', function($scope, $location){
   }
 });
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
   $urlRouterProvider.otherwise('/')
   $stateProvider
     .state('home', {
@@ -54,4 +58,4 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl:'public/html/contact.html',
       controller: 'ContactCtrl'
     })
-});
+}]);

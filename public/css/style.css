@@ -3,11 +3,17 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.navbar {
-  margin-bottom: 0; }
-  .navbar ul a {
-    font-weight: 700;
-    font-family: "Roboto", "san-serif"; }
+.title {
+  color: #3e6294;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+.subtitle {
+  color: #3e6294;
+  font-family: 'Roboto'; }
 
 .section-wrapper {
   padding-top: 30px;
@@ -17,46 +23,35 @@ html, body {
   width: 100%;
   height: 250px; }
 
-.selected a {
-  color: #f3d7a6 !important; }
+nav.navbar {
+  margin-bottom: 0; }
+  nav.navbar ul a {
+    font-weight: 700;
+    font-family: "Roboto", "san-serif"; }
+  nav.navbar ul li.selected a {
+    color: #f3d7a6 !important; }
 
-.title {
-  color: #3e6294;
-  font-size: 32px;
-  font-family: 'Roboto';
-  margin-bottom: 20px; }
-
-.subtitle {
-  color: #3e6294;
-  font-family: 'Roboto'; }
-
-.fa-5x:hover {
-  color: #f3d7a6; }
-
-#ourMission {
+#home #carousel-section img {
+  max-height: 400px;
+  width: 100%; }
+#home #ourMission {
   background-color: #f5f5f5;
   color: #3e4754; }
+#home .fa-5x {
+  color: #3e6294; }
+#home .fa-5x:hover {
+  color: #f3d7a6; }
+#home video {
+  width: 100%;
+  height: auto; }
 
-#mapping {
+#contact #mapping {
   height: 300px;
   margin-top: 10px;
   border: 4px solid #f5f5f5; }
 
-video {
-  width: 100%;
-  height: auto; }
-
-.modal {
-  color: #25325c; }
-
-#carousel-section img {
-  max-height: 400px;
-  width: 100%; }
-
-#about {
+#about #aboutUs {
   background-color: #f5f5f5; }
-  #about .title {
-    font-family: "Roboto", "san-serif"; }
 
 footer {
   padding-top: 10px;
@@ -66,5 +61,7 @@ footer {
     color: #f3d7a6; }
   footer a:hover {
     color: white; }
+  footer #hippaModal {
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */

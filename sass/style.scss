@@ -4,14 +4,17 @@ html, body {
    margin: 0;
    padding: 0;
 }
-.navbar {
-  margin-bottom: 0;
-  ul {
-    a {
-      font-weight: 700;
-      font-family: $font-roboto;
-    }
-  }
+.title {
+  color: $blue;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.subtitle {
+  color: $blue;
+  font-family: 'Roboto';
 }
 .section-wrapper {
   padding-top: 30px;
@@ -23,48 +26,52 @@ html, body {
   height: 250px;
   }
 }
-.selected {
-  a {
-    color: $gold !important;
+nav.navbar {
+  margin-bottom: 0;
+  ul {
+    a {
+      font-weight: 700;
+      font-family: $font-roboto;
+    }
+    li.selected {
+      a {
+        color: $gold !important;
+      }
+    }
   }
 }
-.title {
-  color: $blue;
-  font-size: 32px;
-  font-family: 'Roboto';
-  margin-bottom: 20px;
+
+#home {
+  #carousel-section img{
+    max-height: 400px;
+    width: 100%;
+  }
+  #ourMission {
+    background-color: $lightgray;
+    color: #3e4754;
+  }
+  .fa-5x {
+    color: $blue;
+  }
+  .fa-5x:hover {
+    color: $gold;
+  }
+  video {
+    width: 100% ;
+    height: auto ;
+  }
 }
-.subtitle {
-  color: $blue;
-  font-family: 'Roboto';
+#contact {
+  #mapping {
+    height: 300px;
+    margin-top: 10px;
+    border: 4px solid $lightgray;
+  }
 }
-.fa-5x:hover {
-  color: $gold;
-}
-#ourMission {
-  background-color: $lightgray;
-  color: #3e4754;
-}
-#mapping {
-  height: 300px;
-  margin-top: 10px;
-  border: 4px solid $lightgray;
- }
-video {
-  width: 100% ;
-  height: auto ;
-}
-.modal {
-  color: #25325c;
-}
-#carousel-section img{
-  max-height: 400px;
-  width: 100%;
-}
+
 #about {
-  background-color: $lightgray;
-  .title {
-    font-family: $font-roboto;
+  #aboutUs {
+    background-color: $lightgray;
   }
 }
 
@@ -77,5 +84,8 @@ footer {
   }
   a:hover {
     color: white;
+  }
+  #hippaModal {
+    color: black;
   }
 }
