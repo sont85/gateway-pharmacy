@@ -54,8 +54,8 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       templateUrl:'public/html/contact.html',
       controller: 'ContactCtrl'
     })
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    // $locationProvider.html5Mode({
+    //   enabled: true,
+    //   requireBase: false
+    // });
 }]);
